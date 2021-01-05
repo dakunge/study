@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        div#align {
+            background-color: green;
+            text-align: justify;
+        }
+        div#outer {
+            width: 500px;
+            background-color: red;
+        }
+        div#inner {
+            text-indent: 10%;
+        }
+        #inner p {
+            background-color: yellow;
+            width: 200px;
+        }
+        p.spread {
+            word-spacing: 10px;
+            text-transform: capitalize;
+            text-decoration: underline overline;
+        }
+        h1.spread {
+            letter-spacing: 4px;
+        }
+        p {
+            white-space: pre-line;
+        }
+
+    </style>
+</head>
+<body>
+<div id="outer">
+    <div id="inner">some text. some text. some text.
+        <p>this is a paragragh.</p>
+    </div>
+</div>
+<div id="align">
+    align text
+</div>
+<p class="spread">
+    This is a paragraph. The spaces between words will be increased.
+</p>
+<h1 class="spread">
+    This is a head. The letter space will be increased.
+</h1>
+
+<p>This     paragraph has    many
+    spaces           in it.</p>
+
+</body>
+</html>
+
+<!--
+    1. text-indent (文本缩进属性)
+        支持 绝对值，百分比 两种方式
+        支持负值，此时容易出现文本超出显示器边界的问题，可以配合 padding-left 属性使用
+        此属性会被继承
+    2. text-align (文本)
+        left
+        right
+        center
+        justify 没看懂什么意思
+        inherit 从父元素继承 text-align
+    3. word-spacing
+    4. letter-spacing
+    5. text-transform
+        uppercase
+        lowercase
+        capitalize
+    6. text-decoration
+        none
+        underline
+        overline
+        line-through
+        blink
+        underline overline (支持多个属性)
+    7. white-space
+        normal   空白符 合并， 换行符 忽略, 自动换行
+        pre      空白符 保留， 换行符 保留, 禁止自动换行
+        nowrap   空白符 合并， 换行符 忽略, 禁止自动换行
+        pre-line 空白符 合并， 换行符 保留, 自动换行 
+        pre-wrap 空白符 保留， 换行符 保留, 自动换行 
+    8. direction
+        ltr  left to right
+        rtl  right to left
+-->

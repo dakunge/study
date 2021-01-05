@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #flex {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            flex-flow: row wrap;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+<div id="flex">
+    <div style="width: 50px; background-color: red;">1</div>
+</div>
+    
+</body>
+</html>
+
+<!--
+  flex 布局 (https://www.cnblogs.com/dengxiaoning/p/11681305.html)
+  1. flex-direction 
+    row(默认): 从左往右布局
+    column: 从上道下布局
+  2. flex-wrap
+    nowrap: 不折行，放不下的时候，会等比例缩写(如果 flex-shrink 设置为了0 也不会缩小，会超出)
+    wrap: 折行，从上到下折行
+    wrap-reverse: 折行，从下到上折行
+  3. flex-flow
+    flex-direction, flex-wrap 的复合属性, eg: flex-flow: row wrap
+  4. flex-basis
+    0: 根据内容撑开
+    与 width 同时设置时， flex-basis 优先级高
+    flex-basis 为 auto 时，width 生效
+    flex-basis 代表的是主轴的 width 而非真实的 "width"
+  5. flex-grow
+  6. flex-shrink
+  7. flex-basis
+  8. flex
+    flex-grow, flex-shrink, flex-basis 的复合属性
+    简写:
+      flex: 1  ==  flex: 1 1 0;
+      flex: 2  ==  flex: 2 1 0;
+      flex: auto  ==  flex: 1 1 auto;
+      flex: none  ==  flex: 0 0 auto;
+  9. justify-content
+    flex-start:  在主轴上左对齐
+    flex-end:  在主轴上右对齐
+    center:  在主轴居中对齐
+    space-between:
+    space-around:
+  9. align-items
+    stretch： 如果未设置尺寸， 在交叉轴上撑满
+    flex-start:  在交叉轴上左对齐
+    flex-end:  在交叉轴上右对齐
+    center:  在交叉轴居中对齐
+    baseline: 沿第一行文字的基线对齐
+  9. align-content
+    wrap 的情况，交叉轴上出现了多行， align-content 是控制多行的属性
+    align-content 将多行视为整体布局, align-content 布局确定以后，align-items 在其基础上继续布局
+  10.align-self
+    单独设置对某个元素设置交叉轴对齐方式, 值同 align-items
+
+-->

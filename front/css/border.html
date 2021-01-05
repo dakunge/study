@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+<style>
+    p.dotted {
+        border: medium double transparent;
+    }
+    p.dashed {
+        border-style: dashed;
+    }
+    p.solid {
+        border-style: solid;
+        border-top-width: 1px;
+        border-top-color: red;
+        border-left-width: 5px;
+        border-left-color: black;
+        border-bottom-width: 10px;
+        border-bottom-color: gray;
+        border-right-width: 15px;
+        border-right-color: green;
+    }
+    p.double {
+        border-style: double;
+    }
+    p.groove {
+        border-style: groove;
+    }
+    p.ridge {
+        border-style: ridge;
+    }
+    p.inset {
+        border-style: inset;
+    }
+    p.outset {
+        border-style: outset;
+    }
+    p.dottedsoliddouble {
+        border-style: dotted solid doubleAAAAAAA                                                                                                                                                                                                                                                                                                                                                                                                                    r;
+    }
+</style>
+</head>
+<body>
+    <p class="dotted">A dotted border</p>    
+    <p class="dashed">A dashed border</p>    
+    <p class="solid">A solid border</p>    
+    <p class="double">A double border</p>    
+    <p class="groove">A groove border</p>    
+    <p class="ridge">A ridge border</p>    
+    <p class="inset">A inset border</p>    
+    <p class="outset">A outset border</p>    
+    <p class="dottedsoliddouble">A dotted solid double border</p>    
+</body>
+</html>
+
+<!--
+    1. border (设置宽度，样式， 颜色)
+        eg: border: medium double rgb(250,0,255)
+    2. border-width
+    3. border-style
+    4. border-color
+
+    width, style, color 都可以分别对上，下，左，右 四个单独设置
+        eg: border-color: red
+            border-color: red, green
+            border-color: red, green, black
+            border-color: red, green, black, green
+
+            border-top-color: red
+            border-bottom-color: red
+            border-left-color: red
+            border-right-color: red
+-->

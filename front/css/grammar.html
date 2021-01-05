@@ -1,0 +1,65 @@
+1. css 基础语法
+selector {
+    property: value;
+    property: value;
+    property: value;
+}
+
+2. selector 分组
+h1, h2, h3, h4 {
+    color: green;
+}
+
+3. 派生选择器
+li strong {
+    color: green;
+}
+
+4. id 选择器
+#id {
+    color: green;
+}
+
+id 只能在 html 文档中出现一次
+
+5. id 派生选择器
+#id p {
+    color: green;
+}
+
+6. css 类选择器
+.class {
+    color: green;
+}
+
+.class p {
+    color: green;
+}
+p.class {
+    color: green;
+}
+
+7. 属性选择器
+[title] {
+    color: green;
+}
+
+[title=W3School] {
+    color: green;
+}
+
+适用于由空格分隔的属性值
+[title~=W3School] {
+    color: green;
+}
+
+适用于由连字符分隔的属性值
+[lang|=en] {
+    color: green;
+}
+
+表单选择器
+input[type="text"]
+{
+    color: green;
+}
